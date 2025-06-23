@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../javascriptCdn/cdn.tailwindcss.js"></script>
+</head>
+<body>
+    <div class="main w-full h-screen bg-gray-300 flex items-center relative">
+        <div class="counterAppBody px-4 py-5 w-[60vw] h-[40vh] bg-white absolute top-0 left-1/2 -translate-x-1/2 translate-y-1/2 flex items-center justify-between flex-col">
+            <div class="navbar w-full px-7">
+                <div class="border-b-1 border-black flex items-center justify-between flex-col">
+                    <h1 class="text-3xl m-2 font-semibold">Fill The Form Below</h1>
+                    <h5 class="m-2">*Nagative value are not accepted</h5>
+                </div>
+            </div>
+            <h1 class="text-9xl showVal">00</h1>
+            <div class="functionalBody flex items-center justify-between  gap-2">
+                <input id="incrementVal" type="number" min="1" value="1" class="border-1 border-black px-5 py-2">
+                <button id="incrementBtn" class="cursor-pointer border-1 border-black px-5 py-2 bg-gray-700 text-white">Increment</button>
+                <button id="decrementBtn" class="cursor-pointer border-1 border-black px-5 py-2 bg-gray-700 text-white">Decrement</button>
+                <input id="decrementVal" type="number" min="1" value="1" class="border-1 border-black px-5 py-2">
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
